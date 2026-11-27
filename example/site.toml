@@ -1,0 +1,18 @@
+# Settings and free values for the templates: every top-level key is available as {{key}}.
+base_url = "https://www.example.com"
+name = "Example Studio"
+email = "hello@example.com"
+year = "2026"
+
+# Exactly two languages. Every key of a language is available as {{lang_<key>}} on that language's pages.
+[languages.en]
+home = "/"
+label = "EN"
+skip = "Skip to content"
+contact = "Get in touch"
+
+[languages.de]
+home = "/de/"
+label = "DE"
+skip = "Zum Inhalt"
+contact = "Kontakt"

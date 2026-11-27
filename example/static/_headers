@@ -1,0 +1,7 @@
+# Cloudflare Pages and Netlify read this file. Assets carry a hash of their content in the URL,
+# so they can be cached for a year; pages are checked again on every visit.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin

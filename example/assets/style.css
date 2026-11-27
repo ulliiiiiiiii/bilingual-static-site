@@ -1,0 +1,11 @@
+:root { --text: #1d2330; --muted: #5d6675; --accent: #0f766e; --bg: #fbfbf9; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.55 system-ui, sans-serif; }
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 12px; top: 12px; }
+.top { display: flex; gap: 18px; align-items: center; max-width: 760px; margin: 0 auto; padding: 22px 20px; }
+.brand { font-weight: 700; color: var(--text); text-decoration: none; margin-right: auto; }
+.top a { color: var(--accent); }
+main { max-width: 760px; margin: 0 auto; padding: 24px 20px 48px; }
+h1 { font-size: 2rem; line-height: 1.2; }
+.foot { max-width: 760px; margin: 0 auto; padding: 20px; color: var(--muted); border-top: 1px solid #e3e5e8; }

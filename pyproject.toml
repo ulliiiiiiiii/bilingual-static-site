@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bilingual-static-site"
+version = "0.1.0"
+description = "Build a two-language static website: hreflang pairs, a sitemap with language alternates, hashed asset URLs."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+authors = [{ name = "ulliiiiiiiii" }]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+bilingual-site = "bilingual_site:main"
+
+[project.urls]
+Homepage = "https://github.com/ulliiiiiiiii/bilingual-static-site"
+
+[tool.setuptools]
+py-modules = ["bilingual_site"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
